@@ -1,0 +1,6 @@
+begin
+  if X > Y then
+    R := X - Y
+  else
+    R := Y - X
+end

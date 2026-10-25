@@ -1,0 +1,15 @@
+begin
+  R := 0;
+  while (Y > X) ∨ (Y = X) do
+  begin
+    Q := 0;
+    T := Y;
+    while (T > X) ∨ (T = X) do
+    begin
+      T := T - X;
+      Q := Q + 1
+    end;
+    Y := Q;
+    R := R + 1
+  end
+end
