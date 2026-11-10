@@ -1,0 +1,15 @@
+{
+  "brackets": [
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    ["(", ")"]
+  ],
+  "surroundingPairs": [
+    ["(", ")"]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*(begin\\b.*|if\\b.*then\\s*begin\\b.*|while\\b.*do\\s*begin\\b.*)$",
+    "decreaseIndentPattern": "^\\s*end\\b"
+  }
+}

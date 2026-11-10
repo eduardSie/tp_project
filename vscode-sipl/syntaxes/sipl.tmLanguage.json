@@ -1,0 +1,33 @@
+{
+  "scopeName": "source.sipl",
+  "patterns": [
+    {
+      "name": "keyword.control.sipl",
+      "match": "\\b(begin|end|if|then|else|while|do|skip)\\b"
+    },
+    {
+      "name": "keyword.operator.assignment.sipl",
+      "match": ":="
+    },
+    {
+      "name": "keyword.operator.arithmetic.sipl",
+      "match": "[+*=-]|>"
+    },
+    {
+      "name": "keyword.operator.logical.sipl",
+      "match": "[¬∨|]"
+    },
+    {
+      "name": "constant.numeric.sipl",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "variable.other.sipl",
+      "match": "\\b[A-Za-z_][A-Za-z_0-9]*\\b"
+    },
+    {
+      "name": "punctuation.separator.sequence.sipl",
+      "match": ";"
+    }
+  ]
+}
