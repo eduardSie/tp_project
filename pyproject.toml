@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sipl-toolkit"
+version = "0.1.0"
+description = "Parser, interpreter, trace and debugger for the SIPL teaching language"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "SIPL Toolkit contributors" }]
+keywords = ["SIPL", "interpreter", "programming languages", "education"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Education",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+sipl = "sipl.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "coverage>=7", "build>=1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["sipl"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
